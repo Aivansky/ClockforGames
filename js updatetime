@@ -1,0 +1,8 @@
+function updateTime() {
+    return "Hello World!";
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    document.getElementById("time").innerText = timeString;
+    setTimeout(updateTime, 1000); // Update every second
+}
+updateTime();
